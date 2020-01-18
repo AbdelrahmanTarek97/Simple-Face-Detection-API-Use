@@ -1,0 +1,31 @@
+body {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#video {
+  width: 0;
+  height: 0;
+
+  animation-name: video-animation;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+canvas {
+  position: absolute;
+}
+
+@keyframes video-animation {
+  from {
+    height: 0;
+    width: 720px;
+  }
+  to {
+    height: 560px;
+    width: 720px;
+  }
+}
